@@ -12,6 +12,22 @@
 		450FDCFC1AAB3DBE00D3CE72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450FDCFB1AAB3DBE00D3CE72 /* UIKit.framework */; };
 		450FDCFE1AAB3DC800D3CE72 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450FDCFD1AAB3DC800D3CE72 /* JavaScriptCore.framework */; };
 		450FDD001AAB3DD300D3CE72 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450FDCFF1AAB3DD300D3CE72 /* CoreBluetooth.framework */; };
+		450FDD2D1AAB3E3400D3CE72 /* CBPeripheral+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD061AAB3E3400D3CE72 /* CBPeripheral+Konashi.m */; };
+		450FDD2E1AAB3E3400D3CE72 /* CBService+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD081AAB3E3400D3CE72 /* CBService+Konashi.m */; };
+		450FDD2F1AAB3E3400D3CE72 /* CBUUID+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD0A1AAB3E3400D3CE72 /* CBUUID+Konashi.m */; };
+		450FDD301AAB3E3400D3CE72 /* Konashi+ACDrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD0D1AAB3E3400D3CE72 /* Konashi+ACDrive.m */; };
+		450FDD311AAB3E3400D3CE72 /* Konashi+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD0F1AAB3E3400D3CE72 /* Konashi+ADC.m */; };
+		450FDD321AAB3E3400D3CE72 /* Konashi+Grove.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD111AAB3E3400D3CE72 /* Konashi+Grove.m */; };
+		450FDD331AAB3E3400D3CE72 /* Konashi+JavaScriptBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD131AAB3E3400D3CE72 /* Konashi+JavaScriptBindings.m */; };
+		450FDD341AAB3E3400D3CE72 /* Konashi+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD151AAB3E3400D3CE72 /* Konashi+UI.m */; };
+		450FDD351AAB3E3400D3CE72 /* KNSKonashiPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD1B1AAB3E3400D3CE72 /* KNSKonashiPeripheralImpl.m */; };
+		450FDD361AAB3E3400D3CE72 /* KNSKoshianPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD1D1AAB3E3400D3CE72 /* KNSKoshianPeripheralImpl.m */; };
+		450FDD371AAB3E3400D3CE72 /* KNSPeripheralBaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD1F1AAB3E3400D3CE72 /* KNSPeripheralBaseImpl.m */; };
+		450FDD381AAB3E3400D3CE72 /* KNSHandlerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD231AAB3E3400D3CE72 /* KNSHandlerManager.m */; };
+		450FDD391AAB3E3400D3CE72 /* KNSPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD251AAB3E3400D3CE72 /* KNSPeripheral.m */; };
+		450FDD3A1AAB3E3400D3CE72 /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD281AAB3E3400D3CE72 /* Konashi.m */; };
+		450FDD3B1AAB3E3400D3CE72 /* KonashiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD2A1AAB3E3400D3CE72 /* KonashiUtils.m */; };
+		450FDD3C1AAB3E3400D3CE72 /* NeconoteBLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD2C1AAB3E3400D3CE72 /* NeconoteBLE.m */; };
 		5CEE2E0EB69D443F73B8B7FF /* libPods-neconote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4771FDC6BA35E3CF152F6A3B /* libPods-neconote.a */; };
 		8C583E1A1AAAB7B4002ECA7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C583E191AAAB7B4002ECA7D /* AppDelegate.swift */; };
 		8C583E1C1AAAB7B4002ECA7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C583E1B1AAAB7B4002ECA7D /* ViewController.swift */; };
@@ -82,6 +98,44 @@
 		450FDCFB1AAB3DBE00D3CE72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		450FDCFD1AAB3DC800D3CE72 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		450FDCFF1AAB3DD300D3CE72 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		450FDD051AAB3E3400D3CE72 /* CBPeripheral+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Konashi.h"; sourceTree = "<group>"; };
+		450FDD061AAB3E3400D3CE72 /* CBPeripheral+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Konashi.m"; sourceTree = "<group>"; };
+		450FDD071AAB3E3400D3CE72 /* CBService+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBService+Konashi.h"; sourceTree = "<group>"; };
+		450FDD081AAB3E3400D3CE72 /* CBService+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBService+Konashi.m"; sourceTree = "<group>"; };
+		450FDD091AAB3E3400D3CE72 /* CBUUID+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBUUID+Konashi.h"; sourceTree = "<group>"; };
+		450FDD0A1AAB3E3400D3CE72 /* CBUUID+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBUUID+Konashi.m"; sourceTree = "<group>"; };
+		450FDD0C1AAB3E3400D3CE72 /* Konashi+ACDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+ACDrive.h"; sourceTree = "<group>"; };
+		450FDD0D1AAB3E3400D3CE72 /* Konashi+ACDrive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+ACDrive.m"; sourceTree = "<group>"; };
+		450FDD0E1AAB3E3400D3CE72 /* Konashi+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+ADC.h"; sourceTree = "<group>"; };
+		450FDD0F1AAB3E3400D3CE72 /* Konashi+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+ADC.m"; sourceTree = "<group>"; };
+		450FDD101AAB3E3400D3CE72 /* Konashi+Grove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+Grove.h"; sourceTree = "<group>"; };
+		450FDD111AAB3E3400D3CE72 /* Konashi+Grove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+Grove.m"; sourceTree = "<group>"; };
+		450FDD121AAB3E3400D3CE72 /* Konashi+JavaScriptBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+JavaScriptBindings.h"; sourceTree = "<group>"; };
+		450FDD131AAB3E3400D3CE72 /* Konashi+JavaScriptBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+JavaScriptBindings.m"; sourceTree = "<group>"; };
+		450FDD141AAB3E3400D3CE72 /* Konashi+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+UI.h"; sourceTree = "<group>"; };
+		450FDD151AAB3E3400D3CE72 /* Konashi+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+UI.m"; sourceTree = "<group>"; };
+		450FDD161AAB3E3400D3CE72 /* KonashiJavaScriptBindingsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiJavaScriptBindingsProtocol.h; sourceTree = "<group>"; };
+		450FDD181AAB3E3400D3CE72 /* KonashiConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiConstant.h; sourceTree = "<group>"; };
+		450FDD1A1AAB3E3400D3CE72 /* KNSKonashiPeripheralImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSKonashiPeripheralImpl.h; sourceTree = "<group>"; };
+		450FDD1B1AAB3E3400D3CE72 /* KNSKonashiPeripheralImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSKonashiPeripheralImpl.m; sourceTree = "<group>"; };
+		450FDD1C1AAB3E3400D3CE72 /* KNSKoshianPeripheralImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSKoshianPeripheralImpl.h; sourceTree = "<group>"; };
+		450FDD1D1AAB3E3400D3CE72 /* KNSKoshianPeripheralImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSKoshianPeripheralImpl.m; sourceTree = "<group>"; };
+		450FDD1E1AAB3E3400D3CE72 /* KNSPeripheralBaseImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralBaseImpl.h; sourceTree = "<group>"; };
+		450FDD1F1AAB3E3400D3CE72 /* KNSPeripheralBaseImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPeripheralBaseImpl.m; sourceTree = "<group>"; };
+		450FDD201AAB3E3400D3CE72 /* KNSPeripheralImplProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralImplProtocol.h; sourceTree = "<group>"; };
+		450FDD211AAB3E3400D3CE72 /* KNSPeripheralImpls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralImpls.h; sourceTree = "<group>"; };
+		450FDD221AAB3E3400D3CE72 /* KNSHandlerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSHandlerManager.h; sourceTree = "<group>"; };
+		450FDD231AAB3E3400D3CE72 /* KNSHandlerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSHandlerManager.m; sourceTree = "<group>"; };
+		450FDD241AAB3E3400D3CE72 /* KNSPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheral.h; sourceTree = "<group>"; };
+		450FDD251AAB3E3400D3CE72 /* KNSPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPeripheral.m; sourceTree = "<group>"; };
+		450FDD261AAB3E3400D3CE72 /* Konashi-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi-Prefix.pch"; sourceTree = "<group>"; };
+		450FDD271AAB3E3400D3CE72 /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konashi.h; sourceTree = "<group>"; };
+		450FDD281AAB3E3400D3CE72 /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
+		450FDD291AAB3E3400D3CE72 /* KonashiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiUtils.h; sourceTree = "<group>"; };
+		450FDD2A1AAB3E3400D3CE72 /* KonashiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonashiUtils.m; sourceTree = "<group>"; };
+		450FDD2B1AAB3E3400D3CE72 /* NeconoteBLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeconoteBLE.h; sourceTree = "<group>"; };
+		450FDD2C1AAB3E3400D3CE72 /* NeconoteBLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeconoteBLE.m; sourceTree = "<group>"; };
+		450FDD3D1AAB3E7A00D3CE72 /* neconote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "neconote-Bridging-Header.h"; sourceTree = "<group>"; };
 		4771FDC6BA35E3CF152F6A3B /* libPods-neconote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-neconote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C583E141AAAB7B4002ECA7D /* neconote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neconote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C583E181AAAB7B4002ECA7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,6 +220,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450FDD011AAB3E3400D3CE72 /* NeconoteSDK */ = {
+			isa = PBXGroup;
+			children = (
+				450FDD021AAB3E3400D3CE72 /* Konashi */,
+				450FDD2B1AAB3E3400D3CE72 /* NeconoteBLE.h */,
+				450FDD2C1AAB3E3400D3CE72 /* NeconoteBLE.m */,
+			);
+			path = NeconoteSDK;
+			sourceTree = "<group>";
+		};
+		450FDD021AAB3E3400D3CE72 /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				450FDD031AAB3E3400D3CE72 /* Category */,
+				450FDD171AAB3E3400D3CE72 /* Constant */,
+				450FDD191AAB3E3400D3CE72 /* Impl */,
+				450FDD221AAB3E3400D3CE72 /* KNSHandlerManager.h */,
+				450FDD231AAB3E3400D3CE72 /* KNSHandlerManager.m */,
+				450FDD241AAB3E3400D3CE72 /* KNSPeripheral.h */,
+				450FDD251AAB3E3400D3CE72 /* KNSPeripheral.m */,
+				450FDD261AAB3E3400D3CE72 /* Konashi-Prefix.pch */,
+				450FDD271AAB3E3400D3CE72 /* Konashi.h */,
+				450FDD281AAB3E3400D3CE72 /* Konashi.m */,
+				450FDD291AAB3E3400D3CE72 /* KonashiUtils.h */,
+				450FDD2A1AAB3E3400D3CE72 /* KonashiUtils.m */,
+			);
+			path = Konashi;
+			sourceTree = "<group>";
+		};
+		450FDD031AAB3E3400D3CE72 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				450FDD041AAB3E3400D3CE72 /* CoreBluetooth */,
+				450FDD0B1AAB3E3400D3CE72 /* Konashi */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		450FDD041AAB3E3400D3CE72 /* CoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				450FDD051AAB3E3400D3CE72 /* CBPeripheral+Konashi.h */,
+				450FDD061AAB3E3400D3CE72 /* CBPeripheral+Konashi.m */,
+				450FDD071AAB3E3400D3CE72 /* CBService+Konashi.h */,
+				450FDD081AAB3E3400D3CE72 /* CBService+Konashi.m */,
+				450FDD091AAB3E3400D3CE72 /* CBUUID+Konashi.h */,
+				450FDD0A1AAB3E3400D3CE72 /* CBUUID+Konashi.m */,
+			);
+			path = CoreBluetooth;
+			sourceTree = "<group>";
+		};
+		450FDD0B1AAB3E3400D3CE72 /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				450FDD0C1AAB3E3400D3CE72 /* Konashi+ACDrive.h */,
+				450FDD0D1AAB3E3400D3CE72 /* Konashi+ACDrive.m */,
+				450FDD0E1AAB3E3400D3CE72 /* Konashi+ADC.h */,
+				450FDD0F1AAB3E3400D3CE72 /* Konashi+ADC.m */,
+				450FDD101AAB3E3400D3CE72 /* Konashi+Grove.h */,
+				450FDD111AAB3E3400D3CE72 /* Konashi+Grove.m */,
+				450FDD121AAB3E3400D3CE72 /* Konashi+JavaScriptBindings.h */,
+				450FDD131AAB3E3400D3CE72 /* Konashi+JavaScriptBindings.m */,
+				450FDD141AAB3E3400D3CE72 /* Konashi+UI.h */,
+				450FDD151AAB3E3400D3CE72 /* Konashi+UI.m */,
+				450FDD161AAB3E3400D3CE72 /* KonashiJavaScriptBindingsProtocol.h */,
+			);
+			path = Konashi;
+			sourceTree = "<group>";
+		};
+		450FDD171AAB3E3400D3CE72 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				450FDD181AAB3E3400D3CE72 /* KonashiConstant.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		450FDD191AAB3E3400D3CE72 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				450FDD1A1AAB3E3400D3CE72 /* KNSKonashiPeripheralImpl.h */,
+				450FDD1B1AAB3E3400D3CE72 /* KNSKonashiPeripheralImpl.m */,
+				450FDD1C1AAB3E3400D3CE72 /* KNSKoshianPeripheralImpl.h */,
+				450FDD1D1AAB3E3400D3CE72 /* KNSKoshianPeripheralImpl.m */,
+				450FDD1E1AAB3E3400D3CE72 /* KNSPeripheralBaseImpl.h */,
+				450FDD1F1AAB3E3400D3CE72 /* KNSPeripheralBaseImpl.m */,
+				450FDD201AAB3E3400D3CE72 /* KNSPeripheralImplProtocol.h */,
+				450FDD211AAB3E3400D3CE72 /* KNSPeripheralImpls.h */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
 		5DDFCB1489B54F587DB95F96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +348,7 @@
 		8C583E161AAAB7B4002ECA7D /* neconote */ = {
 			isa = PBXGroup;
 			children = (
+				450FDD011AAB3E3400D3CE72 /* NeconoteSDK */,
 				8CA937821AAABA1F00655488 /* Controller */,
 				8CA937811AAABA1800655488 /* View */,
 				8CA937801AAABA0A00655488 /* Model */,
@@ -211,6 +358,7 @@
 				8C583E221AAAB7B4002ECA7D /* LaunchScreen.xib */,
 				8C583E171AAAB7B4002ECA7D /* Supporting Files */,
 				8CA937A71AAADC4900655488 /* extentions.swift */,
+				450FDD3D1AAB3E7A00D3CE72 /* neconote-Bridging-Header.h */,
 			);
 			path = neconote;
 			sourceTree = "<group>";
@@ -524,11 +672,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C583E1C1AAAB7B4002ECA7D /* ViewController.swift in Sources */,
+				450FDD331AAB3E3400D3CE72 /* Konashi+JavaScriptBindings.m in Sources */,
+				450FDD2D1AAB3E3400D3CE72 /* CBPeripheral+Konashi.m in Sources */,
+				450FDD2F1AAB3E3400D3CE72 /* CBUUID+Konashi.m in Sources */,
 				8CA937A41AAADAA200655488 /* SwitchBase.swift in Sources */,
+				450FDD391AAB3E3400D3CE72 /* KNSPeripheral.m in Sources */,
+				450FDD341AAB3E3400D3CE72 /* Konashi+UI.m in Sources */,
 				8C583E1A1AAAB7B4002ECA7D /* AppDelegate.swift in Sources */,
+				450FDD2E1AAB3E3400D3CE72 /* CBService+Konashi.m in Sources */,
+				450FDD3A1AAB3E3400D3CE72 /* Konashi.m in Sources */,
+				450FDD3C1AAB3E3400D3CE72 /* NeconoteBLE.m in Sources */,
 				8CA9378B1AAABA7D00655488 /* FloorTableViewCell.swift in Sources */,
+				450FDD381AAB3E3400D3CE72 /* KNSHandlerManager.m in Sources */,
 				8CA9378E1AAABFBB00655488 /* CatView.swift in Sources */,
+				450FDD3B1AAB3E3400D3CE72 /* KonashiUtils.m in Sources */,
+				450FDD301AAB3E3400D3CE72 /* Konashi+ACDrive.m in Sources */,
+				450FDD321AAB3E3400D3CE72 /* Konashi+Grove.m in Sources */,
+				450FDD361AAB3E3400D3CE72 /* KNSKoshianPeripheralImpl.m in Sources */,
+				450FDD311AAB3E3400D3CE72 /* Konashi+ADC.m in Sources */,
+				450FDD351AAB3E3400D3CE72 /* KNSKonashiPeripheralImpl.m in Sources */,
 				8CA937A81AAADC4900655488 /* extentions.swift in Sources */,
+				450FDD371AAB3E3400D3CE72 /* KNSPeripheralBaseImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +819,7 @@
 				INFOPLIST_FILE = neconote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/$(PRODUCT_NAME)-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -666,6 +831,7 @@
 				INFOPLIST_FILE = neconote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/$(PRODUCT_NAME)-Bridging-Header.h";
 			};
 			name = Release;
 		};

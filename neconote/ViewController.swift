@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate ,UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: FloorTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as FloorTableViewCell
         //cell.type = types[indexPath.row]
-        cell.floor = indexPath.row+1
+        cell.floor = 5 - indexPath.row
         return cell
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

@@ -1,0 +1,10 @@
+PODS:
+  - NSTimer-Blocks (0.0.1)
+
+DEPENDENCIES:
+  - NSTimer-Blocks (~> 0.0)
+
+SPEC CHECKSUMS:
+  NSTimer-Blocks: 0a653b84ab33068a085f5c03c82c18be1f61eba9
+
+COCOAPODS: 0.35.0

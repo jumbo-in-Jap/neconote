@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate ,UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     var switchView:SwitchBase = SwitchBase.instance(CGRectMake(1000, 1000, 160,160))
     
-    var types = [FloorType.Sofa, FloorType.Ricecooker, FloorType.Door, FloorType.Bathroom]
+    //var types = [FloorType.Sofa, FloorType.Ricecooker, FloorType.Door, FloorType.Bathroom]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +29,12 @@ class ViewController: UIViewController, UITableViewDelegate ,UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: FloorTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as FloorTableViewCell
-        cell.type = types[indexPath.row]
+        //cell.type = types[indexPath.row]
         cell.floor = indexPath.row+1
         return cell
     }

@@ -99,6 +99,7 @@
 		8CA937E81AAAF58B00655488 /* fl5_neco_sitdown2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937D01AAAF58B00655488 /* fl5_neco_sitdown2.png */; };
 		8CA937E91AAAF58B00655488 /* fl5_neco_sleep1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937D11AAAF58B00655488 /* fl5_neco_sleep1.png */; };
 		8CA937EA1AAAF58B00655488 /* fl5_neco_sleep2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937D21AAAF58B00655488 /* fl5_neco_sleep2.png */; };
+		8CFC5D7E1AABA2480057B35D /* template_app_splash_neconote_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CFC5D7C1AABA2480057B35D /* template_app_splash_neconote_05.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +232,7 @@
 		8CA937D01AAAF58B00655488 /* fl5_neco_sitdown2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_neco_sitdown2.png; sourceTree = "<group>"; };
 		8CA937D11AAAF58B00655488 /* fl5_neco_sleep1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_neco_sleep1.png; sourceTree = "<group>"; };
 		8CA937D21AAAF58B00655488 /* fl5_neco_sleep2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_neco_sleep2.png; sourceTree = "<group>"; };
+		8CFC5D7C1AABA2480057B35D /* template_app_splash_neconote_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = template_app_splash_neconote_05.png; sourceTree = "<group>"; };
 		A8B52FF5F50D767F923D864E /* Pods-neconote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neconote.release.xcconfig"; path = "Pods/Target Support Files/Pods-neconote/Pods-neconote.release.xcconfig"; sourceTree = "<group>"; };
 		B6BE2038C4D546DA9DE9EACD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE265093B7F821369A938FDD /* Pods-neconote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neconote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-neconote/Pods-neconote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -478,6 +480,7 @@
 		8CA937911AAAC58E00655488 /* parts */ = {
 			isa = PBXGroup;
 			children = (
+				8CFC5D7C1AABA2480057B35D /* template_app_splash_neconote_05.png */,
 				8C6F935A1AAB812500DE7B5A /* fl1_neco_sleep1.png */,
 				8C6F935B1AAB812500DE7B5A /* fl1_neco_sleep2.png */,
 				8C6F935C1AAB812500DE7B5A /* fl2_neco_sleep1.png */,
@@ -692,6 +695,7 @@
 				8CA937E51AAAF58B00655488 /* fl4_neco_walk3.png in Resources */,
 				8C7F6BE61AAB52FC002C88FC /* fl5_light_on.png in Resources */,
 				8CA937B81AAAE39600655488 /* fl5_neco_walk2.png in Resources */,
+				8CFC5D7E1AABA2480057B35D /* template_app_splash_neconote_05.png in Resources */,
 				8CA937B31AAAE39600655488 /* btn_on.png in Resources */,
 				8C583E211AAAB7B4002ECA7D /* Images.xcassets in Resources */,
 				8C6F93641AAB812500DE7B5A /* fl4_neco_sleep1.png in Resources */,
@@ -895,7 +899,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C7F6BC91AAB4E6D002C88FC /* Pods-neconote.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = neconote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -910,7 +913,6 @@
 		8C583E351AAAB7B5002ECA7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = neconote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

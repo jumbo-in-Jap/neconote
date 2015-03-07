@@ -21,8 +21,11 @@ class FloorTableViewCell: UITableViewCell {
     var floor:Int = 0{
         didSet{
             self.cat.floor = floor
+            self.bgView.image = UIImage(named: String(format:"fl%d_bg", floor))
+            self.setItem(floor)
         }
     }
+    var item:UIImageView!
     var type:FloorType = .Sofa{
         didSet{
             switch type {
@@ -46,6 +49,7 @@ class FloorTableViewCell: UITableViewCell {
         super.init(coder: aDecoder)
         self.selectionStyle = .None
         self.type = FloorType.Sofa
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "on_item:", name: "back_cat", object: nil)
     }
     
     override init() {
@@ -66,5 +70,51 @@ class FloorTableViewCell: UITableViewCell {
         }
     }
     
+    func setItem(type:Int){
+        if(type == 1){
+            item = UIImageView(image: UIImage(named: "fl1_door_off"))
+            item.contentMode = UIViewContentMode.ScaleAspectFill
+            item.frame = CGRectMake(30, 25, 40, 40)
+            self.addSubview(item)
+        }else if(type == 2){
+            
+        }else if(type == 3){
+            item = UIImageView(image: UIImage(named: "fl3_bath_off"))
+            item.contentMode = UIViewContentMode.ScaleAspectFill
+            item.frame = CGRectMake(30, 50, 40, 40)
+            self.addSubview(item)
+        }else if(type == 4){
+            item = UIImageView(image: UIImage(named: "btn_rice_off"))
+            item.contentMode = UIViewContentMode.ScaleAspectFill
+            item.frame = CGRectMake(40, 30, 30, 30)
+            self.addSubview(item)
+        }else if(type == 5){
+            item = UIImageView(image: UIImage(named: "btn_light_off"))
+            item.contentMode = UIViewContentMode.ScaleAspectFill
+            item.frame = CGRectMake(35, 0, 30, 30)
+            self.addSubview(item)
+        }
+        self.bringSubviewToFront(self.cat)
+    }
+    
+    func on_item(notification: NSNotification?) {
+        if let userInfo = notification?.userInfo
+        {
+            if self.floor != userInfo["floor"] as Int{
+                return
+            }
+        }
+        if(self.floor == 1){
+            item.image = UIImage(named: "fl1_door_on")
+        }else if(self.floor == 2){
+            
+        }else if(self.floor == 3){
+            item.image = UIImage(named: "fl3_bath_on")
+        }else if(self.floor == 4){
+            item.image = UIImage(named: "btn_rice_on")
+        }else if(self.floor == 5){
+            item.image = UIImage(named: "btn_light_on")
+        }
+    }
     
 }

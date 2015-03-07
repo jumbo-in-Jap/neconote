@@ -12,13 +12,13 @@ enum CatAnimationType{
     case walk
     case sit
     case back
+    case sleep
 }
 class CatView: UIView {
     
     @IBOutlet weak var catImage: UIImageView!
     var status:CatAnimationType = .sit{
         didSet{
-            
         }
     }
     // 階層をセットしたらnekoが出る
@@ -36,9 +36,10 @@ class CatView: UIView {
             }else if(floor == 2){
                 self.frame = CGRectMake(
                     150,
-                    25,
+                    35,
                     self.frame.size.width,
                     self.frame.size.height)
+                self.status = .sleep
             }else if(floor == 3){
                 self.frame = CGRectMake(
                     80,
@@ -81,6 +82,7 @@ class CatView: UIView {
                 case .walk: self.animation(String(format:"fl%d_neco_walk",self.floor), start_ctn: 1, end_ctn: 4)
                 case .sit:  self.animation(String(format:"fl%d_neco_sitdown",self.floor), start_ctn: 1, end_ctn: 2)
                 case .back:  self.animation(String(format:"fl%d_neco_walk",self.floor), start_ctn: 1, end_ctn: 4)
+                case .sleep:  self.animation(String(format:"fl%d_neco_sleep",self.floor), start_ctn: 1, end_ctn: 2)
                 default :break
                 }
             }

@@ -28,13 +28,34 @@
 		450FDD3A1AAB3E3400D3CE72 /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD281AAB3E3400D3CE72 /* Konashi.m */; };
 		450FDD3B1AAB3E3400D3CE72 /* KonashiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD2A1AAB3E3400D3CE72 /* KonashiUtils.m */; };
 		450FDD3C1AAB3E3400D3CE72 /* NeconoteBLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 450FDD2C1AAB3E3400D3CE72 /* NeconoteBLE.m */; };
-		5CEE2E0EB69D443F73B8B7FF /* libPods-neconote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4771FDC6BA35E3CF152F6A3B /* libPods-neconote.a */; };
 		8C583E1A1AAAB7B4002ECA7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C583E191AAAB7B4002ECA7D /* AppDelegate.swift */; };
 		8C583E1C1AAAB7B4002ECA7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C583E1B1AAAB7B4002ECA7D /* ViewController.swift */; };
 		8C583E1F1AAAB7B4002ECA7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C583E1D1AAAB7B4002ECA7D /* Main.storyboard */; };
 		8C583E211AAAB7B4002ECA7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C583E201AAAB7B4002ECA7D /* Images.xcassets */; };
 		8C583E241AAAB7B4002ECA7D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C583E221AAAB7B4002ECA7D /* LaunchScreen.xib */; };
 		8C583E301AAAB7B5002ECA7D /* neconoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C583E2F1AAAB7B5002ECA7D /* neconoteTests.swift */; };
+		8C6F93601AAB812500DE7B5A /* fl1_neco_sleep1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C6F935A1AAB812500DE7B5A /* fl1_neco_sleep1.png */; };
+		8C6F93611AAB812500DE7B5A /* fl1_neco_sleep2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C6F935B1AAB812500DE7B5A /* fl1_neco_sleep2.png */; };
+		8C6F93621AAB812500DE7B5A /* fl2_neco_sleep1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C6F935C1AAB812500DE7B5A /* fl2_neco_sleep1.png */; };
+		8C6F93631AAB812500DE7B5A /* fl2_neco_sleep2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C6F935D1AAB812500DE7B5A /* fl2_neco_sleep2.png */; };
+		8C6F93641AAB812500DE7B5A /* fl4_neco_sleep1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C6F935E1AAB812500DE7B5A /* fl4_neco_sleep1.png */; };
+		8C6F93651AAB812500DE7B5A /* fl4_neco_sleep2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C6F935F1AAB812500DE7B5A /* fl4_neco_sleep2.png */; };
+		8C7F6BCA1AAB4E6D002C88FC /* Pods-neconote.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BC91AAB4E6D002C88FC /* Pods-neconote.xcconfig */; };
+		8C7F6BD91AAB52FC002C88FC /* btn_light_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BCB1AAB52FC002C88FC /* btn_light_off.png */; };
+		8C7F6BDA1AAB52FC002C88FC /* btn_light_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BCC1AAB52FC002C88FC /* btn_light_on.png */; };
+		8C7F6BDB1AAB52FC002C88FC /* btn_rice_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BCD1AAB52FC002C88FC /* btn_rice_off.png */; };
+		8C7F6BDC1AAB52FC002C88FC /* btn_rice_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BCE1AAB52FC002C88FC /* btn_rice_on.png */; };
+		8C7F6BDD1AAB52FC002C88FC /* btn_te_fl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BCF1AAB52FC002C88FC /* btn_te_fl1.png */; };
+		8C7F6BDE1AAB52FC002C88FC /* btn_te_fl4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD01AAB52FC002C88FC /* btn_te_fl4.png */; };
+		8C7F6BDF1AAB52FC002C88FC /* fl1_door_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD11AAB52FC002C88FC /* fl1_door_off.png */; };
+		8C7F6BE01AAB52FC002C88FC /* fl1_door_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD21AAB52FC002C88FC /* fl1_door_on.png */; };
+		8C7F6BE11AAB52FC002C88FC /* fl3_bath_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD31AAB52FC002C88FC /* fl3_bath_off.png */; };
+		8C7F6BE21AAB52FC002C88FC /* fl3_bath_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD41AAB52FC002C88FC /* fl3_bath_on.png */; };
+		8C7F6BE31AAB52FC002C88FC /* fl4_rice_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD51AAB52FC002C88FC /* fl4_rice_off.png */; };
+		8C7F6BE41AAB52FC002C88FC /* fl4_rice_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD61AAB52FC002C88FC /* fl4_rice_on.png */; };
+		8C7F6BE51AAB52FC002C88FC /* fl5_light_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD71AAB52FC002C88FC /* fl5_light_off.png */; };
+		8C7F6BE61AAB52FC002C88FC /* fl5_light_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F6BD81AAB52FC002C88FC /* fl5_light_on.png */; };
+		8C7F6BE81AAB66EE002C88FC /* libPods-neconote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7F6BE71AAB66EE002C88FC /* libPods-neconote.a */; };
 		8CA9378B1AAABA7D00655488 /* FloorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA937891AAABA7D00655488 /* FloorTableViewCell.swift */; };
 		8CA9378C1AAABA7D00655488 /* FloorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA9378A1AAABA7D00655488 /* FloorTableViewCell.xib */; };
 		8CA9378E1AAABFBB00655488 /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9378D1AAABFBB00655488 /* CatView.swift */; };
@@ -64,8 +85,6 @@
 		8CA937D81AAAF58B00655488 /* fl1_neco_walk4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937C01AAAF58B00655488 /* fl1_neco_walk4.png */; };
 		8CA937D91AAAF58B00655488 /* fl3_neco_sitdown1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937C11AAAF58B00655488 /* fl3_neco_sitdown1.png */; };
 		8CA937DA1AAAF58B00655488 /* fl3_neco_sitdown2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937C21AAAF58B00655488 /* fl3_neco_sitdown2.png */; };
-		8CA937DB1AAAF58B00655488 /* fl3_neco_sleep1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937C31AAAF58B00655488 /* fl3_neco_sleep1.png */; };
-		8CA937DC1AAAF58B00655488 /* fl3_neco_sleep2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937C41AAAF58B00655488 /* fl3_neco_sleep2.png */; };
 		8CA937DD1AAAF58B00655488 /* fl3_neco_walk1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937C51AAAF58B00655488 /* fl3_neco_walk1.png */; };
 		8CA937DE1AAAF58B00655488 /* fl3_neco_walk2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937C61AAAF58B00655488 /* fl3_neco_walk2.png */; };
 		8CA937DF1AAAF58B00655488 /* fl3_neco_walk3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937C71AAAF58B00655488 /* fl3_neco_walk3.png */; };
@@ -147,6 +166,28 @@
 		8C583E291AAAB7B5002ECA7D /* neconoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = neconoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C583E2E1AAAB7B5002ECA7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C583E2F1AAAB7B5002ECA7D /* neconoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neconoteTests.swift; sourceTree = "<group>"; };
+		8C6F935A1AAB812500DE7B5A /* fl1_neco_sleep1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl1_neco_sleep1.png; sourceTree = "<group>"; };
+		8C6F935B1AAB812500DE7B5A /* fl1_neco_sleep2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl1_neco_sleep2.png; sourceTree = "<group>"; };
+		8C6F935C1AAB812500DE7B5A /* fl2_neco_sleep1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl2_neco_sleep1.png; sourceTree = "<group>"; };
+		8C6F935D1AAB812500DE7B5A /* fl2_neco_sleep2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl2_neco_sleep2.png; sourceTree = "<group>"; };
+		8C6F935E1AAB812500DE7B5A /* fl4_neco_sleep1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl4_neco_sleep1.png; sourceTree = "<group>"; };
+		8C6F935F1AAB812500DE7B5A /* fl4_neco_sleep2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl4_neco_sleep2.png; sourceTree = "<group>"; };
+		8C7F6BC91AAB4E6D002C88FC /* Pods-neconote.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-neconote.xcconfig"; path = "Pods/Pods-neconote.xcconfig"; sourceTree = "<group>"; };
+		8C7F6BCB1AAB52FC002C88FC /* btn_light_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_light_off.png; sourceTree = "<group>"; };
+		8C7F6BCC1AAB52FC002C88FC /* btn_light_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_light_on.png; sourceTree = "<group>"; };
+		8C7F6BCD1AAB52FC002C88FC /* btn_rice_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_rice_off.png; sourceTree = "<group>"; };
+		8C7F6BCE1AAB52FC002C88FC /* btn_rice_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_rice_on.png; sourceTree = "<group>"; };
+		8C7F6BCF1AAB52FC002C88FC /* btn_te_fl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_te_fl1.png; sourceTree = "<group>"; };
+		8C7F6BD01AAB52FC002C88FC /* btn_te_fl4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_te_fl4.png; sourceTree = "<group>"; };
+		8C7F6BD11AAB52FC002C88FC /* fl1_door_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl1_door_off.png; sourceTree = "<group>"; };
+		8C7F6BD21AAB52FC002C88FC /* fl1_door_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl1_door_on.png; sourceTree = "<group>"; };
+		8C7F6BD31AAB52FC002C88FC /* fl3_bath_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_bath_off.png; sourceTree = "<group>"; };
+		8C7F6BD41AAB52FC002C88FC /* fl3_bath_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_bath_on.png; sourceTree = "<group>"; };
+		8C7F6BD51AAB52FC002C88FC /* fl4_rice_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl4_rice_off.png; sourceTree = "<group>"; };
+		8C7F6BD61AAB52FC002C88FC /* fl4_rice_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl4_rice_on.png; sourceTree = "<group>"; };
+		8C7F6BD71AAB52FC002C88FC /* fl5_light_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_light_off.png; sourceTree = "<group>"; };
+		8C7F6BD81AAB52FC002C88FC /* fl5_light_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_light_on.png; sourceTree = "<group>"; };
+		8C7F6BE71AAB66EE002C88FC /* libPods-neconote.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-neconote.a"; path = "Pods/build/Debug-iphoneos/libPods-neconote.a"; sourceTree = "<group>"; };
 		8CA937891AAABA7D00655488 /* FloorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorTableViewCell.swift; sourceTree = "<group>"; };
 		8CA9378A1AAABA7D00655488 /* FloorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloorTableViewCell.xib; sourceTree = "<group>"; };
 		8CA9378D1AAABFBB00655488 /* CatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
@@ -176,8 +217,6 @@
 		8CA937C01AAAF58B00655488 /* fl1_neco_walk4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl1_neco_walk4.png; sourceTree = "<group>"; };
 		8CA937C11AAAF58B00655488 /* fl3_neco_sitdown1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_neco_sitdown1.png; sourceTree = "<group>"; };
 		8CA937C21AAAF58B00655488 /* fl3_neco_sitdown2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_neco_sitdown2.png; sourceTree = "<group>"; };
-		8CA937C31AAAF58B00655488 /* fl3_neco_sleep1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_neco_sleep1.png; sourceTree = "<group>"; };
-		8CA937C41AAAF58B00655488 /* fl3_neco_sleep2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_neco_sleep2.png; sourceTree = "<group>"; };
 		8CA937C51AAAF58B00655488 /* fl3_neco_walk1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_neco_walk1.png; sourceTree = "<group>"; };
 		8CA937C61AAAF58B00655488 /* fl3_neco_walk2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_neco_walk2.png; sourceTree = "<group>"; };
 		8CA937C71AAAF58B00655488 /* fl3_neco_walk3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl3_neco_walk3.png; sourceTree = "<group>"; };
@@ -193,6 +232,7 @@
 		8CA937D11AAAF58B00655488 /* fl5_neco_sleep1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_neco_sleep1.png; sourceTree = "<group>"; };
 		8CA937D21AAAF58B00655488 /* fl5_neco_sleep2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_neco_sleep2.png; sourceTree = "<group>"; };
 		A8B52FF5F50D767F923D864E /* Pods-neconote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neconote.release.xcconfig"; path = "Pods/Target Support Files/Pods-neconote/Pods-neconote.release.xcconfig"; sourceTree = "<group>"; };
+		B6BE2038C4D546DA9DE9EACD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE265093B7F821369A938FDD /* Pods-neconote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neconote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-neconote/Pods-neconote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,12 +241,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7F6BE81AAB66EE002C88FC /* libPods-neconote.a in Frameworks */,
 				450FDD001AAB3DD300D3CE72 /* CoreBluetooth.framework in Frameworks */,
 				450FDCFE1AAB3DC800D3CE72 /* JavaScriptCore.framework in Frameworks */,
 				450FDCFC1AAB3DBE00D3CE72 /* UIKit.framework in Frameworks */,
 				450FDCFA1AAB3DB400D3CE72 /* Foundation.framework in Frameworks */,
 				450FDCF81AAB3DA900D3CE72 /* CoreGraphics.framework in Frameworks */,
-				5CEE2E0EB69D443F73B8B7FF /* libPods-neconote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,12 +355,14 @@
 		5DDFCB1489B54F587DB95F96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C7F6BE71AAB66EE002C88FC /* libPods-neconote.a */,
 				450FDCFF1AAB3DD300D3CE72 /* CoreBluetooth.framework */,
 				450FDCFD1AAB3DC800D3CE72 /* JavaScriptCore.framework */,
 				450FDCFB1AAB3DBE00D3CE72 /* UIKit.framework */,
 				450FDCF91AAB3DB400D3CE72 /* Foundation.framework */,
 				450FDCF71AAB3DA900D3CE72 /* CoreGraphics.framework */,
 				4771FDC6BA35E3CF152F6A3B /* libPods-neconote.a */,
+				B6BE2038C4D546DA9DE9EACD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -328,6 +370,7 @@
 		8C583E0B1AAAB7B4002ECA7D = {
 			isa = PBXGroup;
 			children = (
+				8C7F6BC91AAB4E6D002C88FC /* Pods-neconote.xcconfig */,
 				8C583E161AAAB7B4002ECA7D /* neconote */,
 				8C583E2C1AAAB7B5002ECA7D /* neconoteTests */,
 				8C583E151AAAB7B4002ECA7D /* Products */,
@@ -435,6 +478,26 @@
 		8CA937911AAAC58E00655488 /* parts */ = {
 			isa = PBXGroup;
 			children = (
+				8C6F935A1AAB812500DE7B5A /* fl1_neco_sleep1.png */,
+				8C6F935B1AAB812500DE7B5A /* fl1_neco_sleep2.png */,
+				8C6F935C1AAB812500DE7B5A /* fl2_neco_sleep1.png */,
+				8C6F935D1AAB812500DE7B5A /* fl2_neco_sleep2.png */,
+				8C6F935E1AAB812500DE7B5A /* fl4_neco_sleep1.png */,
+				8C6F935F1AAB812500DE7B5A /* fl4_neco_sleep2.png */,
+				8C7F6BCB1AAB52FC002C88FC /* btn_light_off.png */,
+				8C7F6BCC1AAB52FC002C88FC /* btn_light_on.png */,
+				8C7F6BCD1AAB52FC002C88FC /* btn_rice_off.png */,
+				8C7F6BCE1AAB52FC002C88FC /* btn_rice_on.png */,
+				8C7F6BCF1AAB52FC002C88FC /* btn_te_fl1.png */,
+				8C7F6BD01AAB52FC002C88FC /* btn_te_fl4.png */,
+				8C7F6BD11AAB52FC002C88FC /* fl1_door_off.png */,
+				8C7F6BD21AAB52FC002C88FC /* fl1_door_on.png */,
+				8C7F6BD31AAB52FC002C88FC /* fl3_bath_off.png */,
+				8C7F6BD41AAB52FC002C88FC /* fl3_bath_on.png */,
+				8C7F6BD51AAB52FC002C88FC /* fl4_rice_off.png */,
+				8C7F6BD61AAB52FC002C88FC /* fl4_rice_on.png */,
+				8C7F6BD71AAB52FC002C88FC /* fl5_light_off.png */,
+				8C7F6BD81AAB52FC002C88FC /* fl5_light_on.png */,
 				8CA937BB1AAAF58B00655488 /* fl1_neco_sitdown1.png */,
 				8CA937BC1AAAF58B00655488 /* fl1_neco_sitdown2.png */,
 				8CA937BD1AAAF58B00655488 /* fl1_neco_walk1.png */,
@@ -443,8 +506,6 @@
 				8CA937C01AAAF58B00655488 /* fl1_neco_walk4.png */,
 				8CA937C11AAAF58B00655488 /* fl3_neco_sitdown1.png */,
 				8CA937C21AAAF58B00655488 /* fl3_neco_sitdown2.png */,
-				8CA937C31AAAF58B00655488 /* fl3_neco_sleep1.png */,
-				8CA937C41AAAF58B00655488 /* fl3_neco_sleep2.png */,
 				8CA937C51AAAF58B00655488 /* fl3_neco_walk1.png */,
 				8CA937C61AAAF58B00655488 /* fl3_neco_walk2.png */,
 				8CA937C71AAAF58B00655488 /* fl3_neco_walk3.png */,
@@ -580,15 +641,21 @@
 				8CA937E31AAAF58B00655488 /* fl4_neco_walk1.png in Resources */,
 				8CA9378C1AAABA7D00655488 /* FloorTableViewCell.xib in Resources */,
 				8CA937B91AAAE39600655488 /* fl5_neco_walk3.png in Resources */,
+				8C7F6BDB1AAB52FC002C88FC /* btn_rice_off.png in Resources */,
 				8CA937B41AAAE39600655488 /* btn_te_fl5.png in Resources */,
+				8C7F6BE31AAB52FC002C88FC /* fl4_rice_off.png in Resources */,
 				8CA937DF1AAAF58B00655488 /* fl3_neco_walk3.png in Resources */,
 				8CA9379D1AAAC58E00655488 /* fl4_bg.png in Resources */,
 				8CA9379B1AAAC58E00655488 /* fl2_bg.png in Resources */,
-				8CA937DB1AAAF58B00655488 /* fl3_neco_sleep1.png in Resources */,
+				8C7F6BD91AAB52FC002C88FC /* btn_light_off.png in Resources */,
+				8C7F6BCA1AAB4E6D002C88FC /* Pods-neconote.xcconfig in Resources */,
+				8C6F93631AAB812500DE7B5A /* fl2_neco_sleep2.png in Resources */,
+				8C7F6BDA1AAB52FC002C88FC /* btn_light_on.png in Resources */,
 				8CA937BA1AAAE39600655488 /* fl5_neco_walk4.png in Resources */,
+				8C7F6BE51AAB52FC002C88FC /* fl5_light_off.png in Resources */,
 				8CA937DA1AAAF58B00655488 /* fl3_neco_sitdown2.png in Resources */,
 				8CA9379C1AAAC58E00655488 /* fl3_bg.png in Resources */,
-				8CA937DC1AAAF58B00655488 /* fl3_neco_sleep2.png in Resources */,
+				8C7F6BDE1AAB52FC002C88FC /* btn_te_fl4.png in Resources */,
 				8CA937E91AAAF58B00655488 /* fl5_neco_sleep1.png in Resources */,
 				8CA937D91AAAF58B00655488 /* fl3_neco_sitdown1.png in Resources */,
 				8CA937E01AAAF58B00655488 /* fl3_neco_walk4.png in Resources */,
@@ -597,10 +664,16 @@
 				8CA937E81AAAF58B00655488 /* fl5_neco_sitdown2.png in Resources */,
 				8CA937D51AAAF58B00655488 /* fl1_neco_walk1.png in Resources */,
 				8CA937E61AAAF58B00655488 /* fl4_neco_walk4.png in Resources */,
+				8C6F93611AAB812500DE7B5A /* fl1_neco_sleep2.png in Resources */,
 				8CA937DE1AAAF58B00655488 /* fl3_neco_walk2.png in Resources */,
+				8C6F93651AAB812500DE7B5A /* fl4_neco_sleep2.png in Resources */,
+				8C7F6BE01AAB52FC002C88FC /* fl1_door_on.png in Resources */,
 				8CA937B21AAAE39600655488 /* btn_off.png in Resources */,
+				8C7F6BE11AAB52FC002C88FC /* fl3_bath_off.png in Resources */,
+				8C7F6BE41AAB52FC002C88FC /* fl4_rice_on.png in Resources */,
 				8CA9379F1AAAC58E00655488 /* roof.png in Resources */,
 				8CA937D81AAAF58B00655488 /* fl1_neco_walk4.png in Resources */,
+				8C7F6BE21AAB52FC002C88FC /* fl3_bath_on.png in Resources */,
 				8CA937D61AAAF58B00655488 /* fl1_neco_walk2.png in Resources */,
 				8CA937991AAAC58E00655488 /* bg.png in Resources */,
 				8CA937E11AAAF58B00655488 /* fl4_neco_sitdown1.png in Resources */,
@@ -608,19 +681,26 @@
 				8CA937D31AAAF58B00655488 /* fl1_neco_sitdown1.png in Resources */,
 				8CA937D71AAAF58B00655488 /* fl1_neco_walk3.png in Resources */,
 				8C583E241AAAB7B4002ECA7D /* LaunchScreen.xib in Resources */,
+				8C7F6BDD1AAB52FC002C88FC /* btn_te_fl1.png in Resources */,
 				8CA937E21AAAF58B00655488 /* fl4_neco_sitdown2.png in Resources */,
 				8CA937A61AAADAC400655488 /* SwitchBase.xib in Resources */,
 				8CA937D41AAAF58B00655488 /* fl1_neco_sitdown2.png in Resources */,
 				8CA937DD1AAAF58B00655488 /* fl3_neco_walk1.png in Resources */,
+				8C7F6BDC1AAB52FC002C88FC /* btn_rice_on.png in Resources */,
 				8CA937901AAAC19400655488 /* CatView.xib in Resources */,
 				8CA937E71AAAF58B00655488 /* fl5_neco_sitdown1.png in Resources */,
 				8CA937E51AAAF58B00655488 /* fl4_neco_walk3.png in Resources */,
+				8C7F6BE61AAB52FC002C88FC /* fl5_light_on.png in Resources */,
 				8CA937B81AAAE39600655488 /* fl5_neco_walk2.png in Resources */,
 				8CA937B31AAAE39600655488 /* btn_on.png in Resources */,
 				8C583E211AAAB7B4002ECA7D /* Images.xcassets in Resources */,
+				8C6F93641AAB812500DE7B5A /* fl4_neco_sleep1.png in Resources */,
 				8CA9379E1AAAC58E00655488 /* fl5_bg.png in Resources */,
+				8C6F93621AAB812500DE7B5A /* fl2_neco_sleep1.png in Resources */,
 				8CA937E41AAAF58B00655488 /* fl4_neco_walk2.png in Resources */,
 				8CA937EA1AAAF58B00655488 /* fl5_neco_sleep2.png in Resources */,
+				8C6F93601AAB812500DE7B5A /* fl1_neco_sleep1.png in Resources */,
+				8C7F6BDF1AAB52FC002C88FC /* fl1_door_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,7 +741,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-neconote/Pods-neconote-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-neconote-resources.sh\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -769,7 +849,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -805,7 +885,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -813,11 +893,15 @@
 		};
 		8C583E341AAAB7B5002ECA7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE265093B7F821369A938FDD /* Pods-neconote.debug.xcconfig */;
+			baseConfigurationReference = 8C7F6BC91AAB4E6D002C88FC /* Pods-neconote.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = neconote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/$(PRODUCT_NAME)-Bridging-Header.h";
 			};
@@ -825,11 +909,14 @@
 		};
 		8C583E351AAAB7B5002ECA7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8B52FF5F50D767F923D864E /* Pods-neconote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = neconote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/$(PRODUCT_NAME)-Bridging-Header.h";
 			};
@@ -837,6 +924,7 @@
 		};
 		8C583E371AAAB7B5002ECA7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7F6BC91AAB4E6D002C88FC /* Pods-neconote.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -173,7 +173,7 @@ static int NECONOTE_BLE_PERIOD = 20000;
     [Konashi pwmPeriod:KonashiDigitalIO0 period:NECONOTE_BLE_PERIOD];;
     
     //初期位置に設定
-    [Konashi pwmDuty:KonashiDigitalIO0 duty:NECONOTE_BLE_DUTY_DEFAULT];
+    //[Konashi pwmDuty:KonashiDigitalIO0 duty:NECONOTE_BLE_DUTY_DEFAULT];
 
     //設定が終わったのでコールバックする
     if(_readyCallback != nil){

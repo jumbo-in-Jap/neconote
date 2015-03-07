@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate ,UITableViewDataSour
         self.tableView.registerNib( UINib(nibName: "FloorTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         self.view.addSubview(switchView)
         switchView.frame = CGRectMake(1000, 1000, 160,160)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "goal:", name: "goal_cat", object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +44,15 @@ class ViewController: UIViewController, UITableViewDelegate ,UITableViewDataSour
     
     func tableView(tableView: UITableView?, didSelectRowAtIndexPath indexPath:NSIndexPath!) {
         //self.switchView.change()
+    }
+    
+    func goal(notification: NSNotification?) {
+        if let userInfo = notification?.userInfo
+        {
+            var floor = userInfo["floor"] as Int
+            self.switchView.floor = floor
+            self.switchView.show()
+        }
     }
 
 }

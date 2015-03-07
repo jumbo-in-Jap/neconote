@@ -11,10 +11,10 @@ import UIKit
 enum CatAnimationType{
     case walk
     case sit
-    case jump
+    case back
 }
 class CatView: UIView {
-
+    
     @IBOutlet weak var catImage: UIImageView!
     var status:CatAnimationType = .sit{
         didSet{
@@ -56,7 +56,17 @@ class CatView: UIView {
         }
     }
     
+    func back(notification: NSNotification?) {
+        if let userInfo = notification?.userInfo
+        {
+            if self.floor == userInfo["floor"] as Int{
+                self.status = .back
+            }
+        }
+    }
+    
     override func drawRect(rect: CGRect) {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "back:", name: "back_cat", object: nil)
     }
     
     class func instance(frame:CGRect) -> CatView {
@@ -70,6 +80,7 @@ class CatView: UIView {
                 switch (self.status){
                 case .walk: self.animation(String(format:"fl%d_neco_walk",self.floor), start_ctn: 1, end_ctn: 4)
                 case .sit:  self.animation(String(format:"fl%d_neco_sitdown",self.floor), start_ctn: 1, end_ctn: 2)
+                case .back:  self.animation(String(format:"fl%d_neco_walk",self.floor), start_ctn: 1, end_ctn: 4)
                 default :break
                 }
             }
@@ -83,13 +94,17 @@ class CatView: UIView {
             let delay = 0.8 * Double(NSEC_PER_SEC)
             dispatch_async(dispatch_get_main_queue(), {
                 self.catImage.image = UIImage(named: img_name)
+                // walkなら画像の更新だけでなく座標も動かす
+                if(self.status == .walk)
+                {
+                    self.catImage.transform = CGAffineTransformMakeScale(1, 1)
+                    self.toGoal(16.0)
+                }else if(self.status == .back){
+                    self.catImage.transform = CGAffineTransformMakeScale(-1, 1)
+                    self.toBack(16.0)
+                }
             })
             
-            // walkなら画像の更新だけでなく座標も動かす
-            if(self.status == .walk)
-            {
-                
-            }
             NSThread.sleepForTimeInterval(self.getRandomNumber(Min: 0.5, Max: 0.6))
         }
     }
@@ -97,16 +112,50 @@ class CatView: UIView {
     // 呼ぶたびにすこしずつゴールに近ずける
     func toGoal(walkDist:CGFloat){
         // 進むピクセルのみ指定
-        var x0 = self.frame.origin.x
-        var y0 = self.frame.origin.y
-        var x1 = 45
-        var y1 = 25
-        //var res = atan((y1-y0)/x1-x0)
+        var x0:CGFloat = self.frame.origin.x
+        var y0:CGFloat = self.frame.origin.y
+        var x1:CGFloat = 45
+        var y1:CGFloat = 25
+        var delta = atan((y1-y0)/x1-x0)
+        var x_:CGFloat = 0
+        var y_:CGFloat = 0
+        
+        if(y1>y0){
+            y_ = y0 + walkDist
+        }else{
+            y_ = y0 - walkDist
+        }
+        if(abs(y1-y0) < walkDist){
+            y_ = y1
+        }
+        
+        x_ = x0 - walkDist
+        if(abs(x1-x0) < walkDist){
+            x_ = x1
+        }
+        
+        if (x_ == x1 && y_ == y1){
+            self.status = .sit
+            NSNotificationCenter.defaultCenter().postNotificationName("goal_cat", object: nil, userInfo: ["floor":self.floor])
+        }
+        self.frame = CGRectMake(x_, y_, self.frame.size.width, self.frame.size.height)
     }
-
+    
     
     func getRandomNumber(Min _Min : Float, Max _Max : Float)->NSTimeInterval {
         return NSTimeInterval(( Float(arc4random_uniform(UINT32_MAX)) / Float(UINT32_MAX) ) * (_Max - _Min) + _Min)
     }
+    
+    func toBack(walkDist:CGFloat)
+    {
+        var x_ = self.frame.origin.x + walkDist
+        if(abs(100-x_) < walkDist){
+            x_ = 100
+        }
+        if( x_ == 100){
+            self.status = .sit
+        }
 
+        self.frame = CGRectMake(x_, self.frame.origin.y, self.frame.size.width, self.frame.size.height)
+    }
 }

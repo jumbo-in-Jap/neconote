@@ -10,5 +10,4 @@
 #define neconote_neconote_Bridging_Header_h
 
 #import "NeconoteBLE.h"
-
 #endif

@@ -100,6 +100,9 @@
 		8CA937E91AAAF58B00655488 /* fl5_neco_sleep1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937D11AAAF58B00655488 /* fl5_neco_sleep1.png */; };
 		8CA937EA1AAAF58B00655488 /* fl5_neco_sleep2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA937D21AAAF58B00655488 /* fl5_neco_sleep2.png */; };
 		8CFC5D7E1AABA2480057B35D /* template_app_splash_neconote_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CFC5D7C1AABA2480057B35D /* template_app_splash_neconote_05.png */; };
+		8CFC5D831AABB5ED0057B35D /* cat2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CFC5D811AABB5ED0057B35D /* cat2.mp3 */; };
+		8CFC5D841AABB5ED0057B35D /* cat3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CFC5D821AABB5ED0057B35D /* cat3.mp3 */; };
+		8CFC5D861AABB7640057B35D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFC5D851AABB7630057B35D /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +236,9 @@
 		8CA937D11AAAF58B00655488 /* fl5_neco_sleep1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_neco_sleep1.png; sourceTree = "<group>"; };
 		8CA937D21AAAF58B00655488 /* fl5_neco_sleep2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fl5_neco_sleep2.png; sourceTree = "<group>"; };
 		8CFC5D7C1AABA2480057B35D /* template_app_splash_neconote_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = template_app_splash_neconote_05.png; sourceTree = "<group>"; };
+		8CFC5D811AABB5ED0057B35D /* cat2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat2.mp3; sourceTree = "<group>"; };
+		8CFC5D821AABB5ED0057B35D /* cat3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat3.mp3; sourceTree = "<group>"; };
+		8CFC5D851AABB7630057B35D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A8B52FF5F50D767F923D864E /* Pods-neconote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neconote.release.xcconfig"; path = "Pods/Target Support Files/Pods-neconote/Pods-neconote.release.xcconfig"; sourceTree = "<group>"; };
 		B6BE2038C4D546DA9DE9EACD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE265093B7F821369A938FDD /* Pods-neconote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neconote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-neconote/Pods-neconote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFC5D861AABB7640057B35D /* AudioToolbox.framework in Frameworks */,
 				8C7F6BE81AAB66EE002C88FC /* libPods-neconote.a in Frameworks */,
 				450FDD001AAB3DD300D3CE72 /* CoreBluetooth.framework in Frameworks */,
 				450FDCFE1AAB3DC800D3CE72 /* JavaScriptCore.framework in Frameworks */,
@@ -357,6 +364,7 @@
 		5DDFCB1489B54F587DB95F96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CFC5D851AABB7630057B35D /* AudioToolbox.framework */,
 				8C7F6BE71AAB66EE002C88FC /* libPods-neconote.a */,
 				450FDCFF1AAB3DD300D3CE72 /* CoreBluetooth.framework */,
 				450FDCFD1AAB3DC800D3CE72 /* JavaScriptCore.framework */,
@@ -480,6 +488,8 @@
 		8CA937911AAAC58E00655488 /* parts */ = {
 			isa = PBXGroup;
 			children = (
+				8CFC5D811AABB5ED0057B35D /* cat2.mp3 */,
+				8CFC5D821AABB5ED0057B35D /* cat3.mp3 */,
 				8CFC5D7C1AABA2480057B35D /* template_app_splash_neconote_05.png */,
 				8C6F935A1AAB812500DE7B5A /* fl1_neco_sleep1.png */,
 				8C6F935B1AAB812500DE7B5A /* fl1_neco_sleep2.png */,
@@ -658,6 +668,7 @@
 				8C7F6BE51AAB52FC002C88FC /* fl5_light_off.png in Resources */,
 				8CA937DA1AAAF58B00655488 /* fl3_neco_sitdown2.png in Resources */,
 				8CA9379C1AAAC58E00655488 /* fl3_bg.png in Resources */,
+				8CFC5D841AABB5ED0057B35D /* cat3.mp3 in Resources */,
 				8C7F6BDE1AAB52FC002C88FC /* btn_te_fl4.png in Resources */,
 				8CA937E91AAAF58B00655488 /* fl5_neco_sleep1.png in Resources */,
 				8CA937D91AAAF58B00655488 /* fl3_neco_sitdown1.png in Resources */,
@@ -682,6 +693,7 @@
 				8CA937E11AAAF58B00655488 /* fl4_neco_sitdown1.png in Resources */,
 				8CA9379A1AAAC58E00655488 /* fl1_bg.png in Resources */,
 				8CA937D31AAAF58B00655488 /* fl1_neco_sitdown1.png in Resources */,
+				8CFC5D831AABB5ED0057B35D /* cat2.mp3 in Resources */,
 				8CA937D71AAAF58B00655488 /* fl1_neco_walk3.png in Resources */,
 				8C583E241AAAB7B4002ECA7D /* LaunchScreen.xib in Resources */,
 				8C7F6BDD1AAB52FC002C88FC /* btn_te_fl1.png in Resources */,

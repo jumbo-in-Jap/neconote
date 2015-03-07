@@ -65,7 +65,7 @@ class FloorTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        if selected{
+        if selected && floor != 2{
             cat.status = .walk
         }
     }

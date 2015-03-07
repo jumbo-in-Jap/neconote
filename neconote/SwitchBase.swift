@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class SwitchBase: UIView {
 
@@ -75,6 +76,12 @@ class SwitchBase: UIView {
     
     func showHand(floor:Int)
     {
+        // Load
+        let soundURL = NSBundle.mainBundle().URLForResource("cat3", withExtension: "mp3")
+        var mySound: SystemSoundID = 0
+        AudioServicesCreateSystemSoundID(soundURL, &mySound)
+        AudioServicesPlaySystemSound(mySound)
+        
         UIView.animateWithDuration(0.8,
             animations: {() -> Void in
                 self.necohand.frame = CGRectMake(

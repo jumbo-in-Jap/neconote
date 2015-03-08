@@ -34,4 +34,13 @@ typedef void(^NeconoteToggleCallback)(BOOL flg);
 // ON,OFF くり返し
 - (void) toggle:(NeconoteToggleCallback)callback;
 
+//炊飯器用 ON
+- (void) cooker_on:(NeconoteCallback)callback;
+
+//ドアを開く
+- (void) door_open:(NeconoteCallback)callback;
+
+//ドアを開く
+- (void) door_close:(NeconoteCallback)callback;
+
 @end

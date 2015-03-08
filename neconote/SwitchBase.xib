@@ -34,6 +34,6 @@
     <resources>
         <image name="btn_light_off.png" width="152" height="232"/>
         <image name="btn_off.png" width="364" height="151"/>
-        <image name="btn_te_fl1.png" width="31" height="52"/>
+        <image name="btn_te_fl1.png" width="124" height="208"/>
     </resources>
 </document>

@@ -41,6 +41,12 @@ static int NECONOTE_BLE_DUTY_ON = 1100;
 //OFF時 位置
 static int NECONOTE_BLE_DUTY_OFF = 1800;
 
+//炊飯器 ON
+static int NECONOTE_BLE_DUTY_COOKER_ON = 870;
+
+//ドア オープン
+static int NECONOTE_BLE_DUTY_DOOR_OPEN = 630;
+
 //サーボ用のペイロード
 static int NECONOTE_BLE_PERIOD = 20000;
 
@@ -61,13 +67,14 @@ static int NECONOTE_BLE_PERIOD = 20000;
 
 //初期化
 - (id) initialize {
-    //ネコのリスト
-    _nekoList = @{@"1":@"konashi2-f01268",
-                  @"2":@"konashi2-f0126f",
-                  @"3":@"konashi2-f0125b"};
+    //ネコ,ドアのリスト
+    _nekoList = @{/* @"1":@"konashi2-f01268", */
+                  @"lighting":@"konashi2-f0126f",
+                  @"cooker":@"konashi2-f0125b",
+                  @"door":@"konashi2-f010aa"};
     
     _toggle_status = NO;
-
+    
     [Konashi initialize];
     
     [Konashi addObserver:self selector:@selector(connected) name:KonashiEventConnectedNotification];
@@ -116,8 +123,10 @@ static int NECONOTE_BLE_PERIOD = 20000;
     //タイマーでPWM停止
     pwmTimeOutTimer = [NSTimer scheduledTimerWithTimeInterval:PWM_TIMEOUT block:^{
         pwmTimeOutTimer = nil;
-        [Konashi pwmDuty:KonashiDigitalIO0 duty:0];
-        callback();
+        //[Konashi pwmDuty:KonashiDigitalIO0 duty:0];
+        //callback();
+        //初期位置へ
+        [self def:callback];
     } repeats:NO];
 }
 
@@ -133,8 +142,10 @@ static int NECONOTE_BLE_PERIOD = 20000;
     //タイマーでPWM停止
     pwmTimeOutTimer = [NSTimer scheduledTimerWithTimeInterval:PWM_TIMEOUT block:^{
         pwmTimeOutTimer = nil;
-        [Konashi pwmDuty:KonashiDigitalIO0 duty:0];
-        callback();
+        //[Konashi pwmDuty:KonashiDigitalIO0 duty:0];
+        //callback();
+        //初期位置へ
+        [self def:callback];
     } repeats:NO];
 }
 
@@ -156,6 +167,62 @@ static int NECONOTE_BLE_PERIOD = 20000;
     }
 }
 
+//DEFAULT 操作
+- (void) def:(NeconoteCallback)callback{
+    ////二重押し防止
+    if(pwmTimeOutTimer != nil) return;
+    
+    NSLog(@"NECONOTE_BLE_DUTY_DEFAULT");
+    [Konashi pwmDuty:KonashiDigitalIO0 duty:NECONOTE_BLE_DUTY_DEFAULT];
+    //タイマーでPWM停止
+    pwmTimeOutTimer = [NSTimer scheduledTimerWithTimeInterval:PWM_TIMEOUT block:^{
+        pwmTimeOutTimer = nil;
+        [Konashi pwmDuty:KonashiDigitalIO0 duty:0];
+        callback();
+    } repeats:NO];
+}
+
+//炊飯器用 ON
+- (void) cooker_on:(NeconoteCallback)callback{
+    //二重押し防止
+    if(pwmTimeOutTimer != nil) return;
+    
+    NSLog(@"COOKER_ON");
+    [Konashi pwmDuty:KonashiDigitalIO0 duty:NECONOTE_BLE_DUTY_COOKER_ON];
+    
+    //タイマーでDEFAULTのの位置に戻す
+    pwmTimeOutTimer = [NSTimer scheduledTimerWithTimeInterval:PWM_TIMEOUT block:^{
+        pwmTimeOutTimer = nil;
+        //初期位置へ
+        [self def:callback];
+    } repeats:NO];
+}
+
+
+//ドアを開く
+- (void) door_open:(NeconoteCallback)callback{
+    NSLog(@"NECONOTE_BLE_DUTY_DOOR_OPEN");
+    [Konashi pwmDuty:KonashiDigitalIO1 duty:NECONOTE_BLE_DUTY_DOOR_OPEN];
+    //タイマーでPWM停止
+    pwmTimeOutTimer = [NSTimer scheduledTimerWithTimeInterval:PWM_TIMEOUT block:^{
+        pwmTimeOutTimer = nil;
+        [Konashi pwmDuty:KonashiDigitalIO1 duty:0];
+        callback();
+    } repeats:NO];
+}
+
+//ドアを閉じる
+- (void) door_close:(NeconoteCallback)callback{
+    NSLog(@"NECONOTE_BLE_DUTY_DOOR_CLOSE");
+    [Konashi pwmDuty:KonashiDigitalIO1 duty:NECONOTE_BLE_DUTY_DEFAULT];
+    //タイマーでPWM停止
+    pwmTimeOutTimer = [NSTimer scheduledTimerWithTimeInterval:PWM_TIMEOUT block:^{
+        pwmTimeOutTimer = nil;
+        [Konashi pwmDuty:KonashiDigitalIO1 duty:0];
+        callback();
+    } repeats:NO];
+}
+
 // Konashi デリゲート -------------
 
 //Konashiと接続
@@ -167,14 +234,18 @@ static int NECONOTE_BLE_PERIOD = 20000;
 -(void) ready{
     NSLog(@"READY");
     NSLog(@"peripheralName:%@",[Konashi peripheralName]);
-
+    
     //IOピンの初期化
     [Konashi pwmMode:KonashiDigitalIO0 mode:KonashiPWMModeEnable];
-    [Konashi pwmPeriod:KonashiDigitalIO0 period:NECONOTE_BLE_PERIOD];;
+    [Konashi pwmPeriod:KonashiDigitalIO0 period:NECONOTE_BLE_PERIOD];
+    
+    //IOピンの初期化
+    [Konashi pwmMode:KonashiDigitalIO1 mode:KonashiPWMModeEnable];
+    [Konashi pwmPeriod:KonashiDigitalIO1 period:NECONOTE_BLE_PERIOD];
     
     //初期位置に設定
     //[Konashi pwmDuty:KonashiDigitalIO0 duty:NECONOTE_BLE_DUTY_DEFAULT];
-
+    
     //設定が終わったのでコールバックする
     if(_readyCallback != nil){
         _readyCallback();

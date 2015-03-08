@@ -16,6 +16,7 @@ class SwitchBase: UIView {
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var switchImage: UIImageView!
     @IBOutlet weak var necohand:UIImageView!
+    var door_toggle:Bool = true
     var floor:Int = 1{
         didSet{
             self.necohand.image = UIImage(named: String(format: "btn_te_fl%d", self.floor))
@@ -42,7 +43,22 @@ class SwitchBase: UIView {
     func completeAnimation(){}
     
     func show(){
-//        NeconoteBLE.shared().findWithName("2", ready: {()->Void in
+        /*
+        @"lighting":@"konashi2-f0126f",
+        @"cooker":@"konashi2-f0125b",
+        @"door":@"konashi2-f010aa"};
+*/
+        var name = ""
+        if self.floor == 1
+        {
+            name = "door"
+        }else if self.floor == 4{
+            name = "cooker"
+        }else if self.floor == 5{
+            name = "lighting"
+        }
+
+        NeconoteBLE.shared().findWithName(name, ready: {()->Void in
             self.switchImage.image = UIImage(named: "btn_off")
             self.frame = CGRectMake(
                 (UIScreen.mainScreen().bounds.width - 160)/2,
@@ -55,7 +71,7 @@ class SwitchBase: UIView {
                 }, completion: {(Bool) -> Void in
                     self.showHand(self.floor)
             })
-//        })
+        })
     }
 
     func hide(){
@@ -77,7 +93,7 @@ class SwitchBase: UIView {
     func showHand(floor:Int)
     {
         // Load
-        let soundURL = NSBundle.mainBundle().URLForResource("cat3", withExtension: "mp3")
+        let soundURL = NSBundle.mainBundle().URLForResource(String(format:"cat%d",self.floor), withExtension: "mp3")
         var mySound: SystemSoundID = 0
         AudioServicesCreateSystemSoundID(soundURL, &mySound)
         AudioServicesPlaySystemSound(mySound)
@@ -90,10 +106,27 @@ class SwitchBase: UIView {
                     self.necohand.frame.width,
                     self.necohand.frame.height)
             }, completion: {(Bool) -> Void in
-                //NeconoteBLE.shared().toggle({(res)->Void in })
+                if self.floor == 1
+                {
+                    self.door_toggle ? NeconoteBLE.shared().door_close({
+                        NeconoteBLE.shared().disconnect()
+                    }) : NeconoteBLE.shared().door_open({
+                        NeconoteBLE.shared().disconnect()
+                    })
+                    self.door_toggle = !self.door_toggle
+                    
+                }else if self.floor == 4{
+                    NeconoteBLE.shared().cooker_on({
+                        NeconoteBLE.shared().disconnect()
+                    })
+                    
+                }else if self.floor == 5{
+                    NeconoteBLE.shared().toggle({(res)->Void in
+                        NeconoteBLE.shared().disconnect()
+                    })
+                }
                 self.switchImage.image = UIImage(named: "btn_on")
                 self.hide()
-                //NeconoteBLE.shared().disconnect()
                 NSNotificationCenter.defaultCenter().postNotificationName("back_cat", object: nil, userInfo: ["floor":floor])
         })
     }
